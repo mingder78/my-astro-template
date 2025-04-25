@@ -1,4 +1,4 @@
-import Redis, { Result, Callback } from "ioredis";
+import Redis, { type Result, type Callback } from "ioredis";
 const redis = new Redis();
 await redis.set('key1','value1')
 const ok = await redis.get('key1')
